@@ -26,18 +26,17 @@ A modern, responsive personal portfolio website built with HTML, CSS, and JavaSc
 
 ```
 Portfolio/
-├── portfolio.html     # Main HTML file
+├── index.html     # Main HTML file
 ├── profile_pic.jpeg   # Profile picture
 ├── Resume_dlkr.pdf    # Downloadable resume
-├── README.md          # Project documentation
-└── .DS_Store          # macOS system file
+└── README.md          # Project documentation
 ```
 
 ## Setup and Usage
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/Layakishorereddy11/Portfolio.git
    cd portfolio
    ```
 
