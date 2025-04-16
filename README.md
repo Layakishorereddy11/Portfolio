@@ -4,6 +4,8 @@ A modern, responsive personal portfolio website built with HTML, CSS, and JavaSc
 
 ![Portfolio Screenshot](image.png)
 
+Check out my deployed portfolio [here](https://layakishorereddy11.github.io/Portfolio/).
+
 ## Features
 
 - **Responsive Design**: Fully responsive layout that works on all devices
