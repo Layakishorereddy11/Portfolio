@@ -9,57 +9,86 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
         
+        :root {
+            --bg-color: #e6e7ee;
+            --text-color: #31344b;
+            --shadow-dark: #c4c4ca;
+            --shadow-light: #ffffff;
+            --gradient-start: #e6e7ee;
+            --gradient-middle: #31344b;
+            --gradient-end: #e6e7ee;
+            --skill-gradient-start: #4f6df5;
+            --skill-gradient-end: #8a2be2;
+            --secondary-text: #6b7280;
+            --timeline-color: #31344b;
+        }
+        
+        [data-theme="dark"] {
+            --bg-color: #121212;
+            --text-color: #e6e7ee;
+            --shadow-dark: #090909;
+            --shadow-light: #202020;
+            --gradient-start: #121212;
+            --gradient-middle: #e6e7ee;
+            --gradient-end: #121212;
+            --skill-gradient-start: #8a2be2;
+            --skill-gradient-end: #4f6df5;
+            --secondary-text: #9ca3af;
+            --timeline-color: #e6e7ee;
+        }
+        
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #e6e7ee;
-            color: #31344b;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
         
         .neumorphic {
             border-radius: 10px;
-            background: #e6e7ee;
-            box-shadow:  5px 5px 10px #c4c4ca, 
-                        -5px -5px 10px #ffffff;
+            background: var(--bg-color);
+            box-shadow:  5px 5px 10px var(--shadow-dark), 
+                        -5px -5px 10px var(--shadow-light);
             transition: all 0.3s ease;
         }
         
         .neumorphic:hover {
-            box-shadow: inset 5px 5px 10px #c4c4ca, 
-                        inset -5px -5px 10px #ffffff;
+            box-shadow: inset 5px 5px 10px var(--shadow-dark), 
+                        inset -5px -5px 10px var(--shadow-light);
         }
         
         .neumorphic-flat {
             border-radius: 10px;
-            background: #e6e7ee;
-            box-shadow: inset 5px 5px 10px #c4c4ca, 
-                        inset -5px -5px 10px #ffffff;
+            background: var(--bg-color);
+            box-shadow: inset 5px 5px 10px var(--shadow-dark), 
+                        inset -5px -5px 10px var(--shadow-light);
         }
         
         .neumorphic-btn {
             border-radius: 50px;
-            background: #e6e7ee;
-            box-shadow:  5px 5px 10px #c4c4ca, 
-                        -5px -5px 10px #ffffff;
+            background: var(--bg-color);
+            box-shadow:  5px 5px 10px var(--shadow-dark), 
+                        -5px -5px 10px var(--shadow-light);
             transition: all 0.3s ease;
         }
         
         .neumorphic-btn:hover {
-            box-shadow: inset 5px 5px 10px #c4c4ca, 
-                        inset -5px -5px 10px #ffffff;
+            box-shadow: inset 5px 5px 10px var(--shadow-dark), 
+                        inset -5px -5px 10px var(--shadow-light);
         }
         
         .neumorphic-card {
             border-radius: 15px;
-            background: #e6e7ee;
-            box-shadow:  8px 8px 15px #c4c4ca, 
-                        -8px -8px 15px #ffffff;
+            background: var(--bg-color);
+            box-shadow:  8px 8px 15px var(--shadow-dark), 
+                        -8px -8px 15px var(--shadow-light);
             transition: all 0.3s ease;
         }
         
         .neumorphic-card:hover {
             transform: translateY(-5px);
-            box-shadow:  12px 12px 20px #c4c4ca, 
-                        -12px -12px 20px #ffffff;
+            box-shadow:  12px 12px 20px var(--shadow-dark), 
+                        -12px -12px 20px var(--shadow-light);
         }
         
         .section-title {
@@ -75,22 +104,22 @@
             height: 3px;
             bottom: 0;
             left: 25%;
-            background: linear-gradient(90deg, #e6e7ee, #31344b, #e6e7ee);
+            background: linear-gradient(90deg, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
             border-radius: 3px;
         }
         
         .skill-bar {
             height: 10px;
             border-radius: 5px;
-            background: #e6e7ee;
-            box-shadow: inset 3px 3px 5px #c4c4ca, 
-                        inset -3px -3px 5px #ffffff;
+            background: var(--bg-color);
+            box-shadow: inset 3px 3px 5px var(--shadow-dark), 
+                        inset -3px -3px 5px var(--shadow-light);
         }
         
         .skill-progress {
             height: 100%;
             border-radius: 5px;
-            background: linear-gradient(90deg, #4f6df5, #8a2be2);
+            background: linear-gradient(90deg, var(--skill-gradient-start), var(--skill-gradient-end));
         }
         
         .timeline-item {
@@ -107,9 +136,9 @@
             border-radius: 50%;
             left: 0;
             top: 5px;
-            background: #31344b;
-            box-shadow:  3px 3px 5px #c4c4ca, 
-                        -3px -3px 5px #ffffff;
+            background: var(--timeline-color);
+            box-shadow:  3px 3px 5px var(--shadow-dark), 
+                        -3px -3px 5px var(--shadow-light);
         }
         
         .timeline-item:after {
@@ -119,15 +148,57 @@
             height: calc(100% - 15px);
             left: 7px;
             top: 20px;
-            background: #31344b;
+            background: var(--timeline-color);
         }
         
         .timeline-item:last-child:after {
             display: none;
         }
+        
+        .theme-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+        .theme-switch-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .text-gray-600, .text-gray-500 {
+            color: var(--secondary-text);
+        }
+
+        /* Animation for theme switch */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .theme-switch-btn i {
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .theme-switch-btn:active i {
+            animation: spin 0.5s ease-in-out;
+        }
     </style>
 </head>
 <body class="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+    <div class="theme-switch">
+        <div class="neumorphic-btn theme-switch-btn" id="themeToggle">
+            <i class="fas fa-sun"></i>
+        </div>
+    </div>
     <div class="max-w-6xl mx-auto">
         <!-- Header Section -->
         <header class="neumorphic p-8 mb-8">
@@ -383,6 +454,49 @@
     </div>
 
     <script>
+        // Theme switching functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const iconElement = themeToggle.querySelector('i');
+        
+        // Check for saved theme preference or use device preference
+        const getCurrentTheme = () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                return savedTheme;
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+        
+        // Apply the current theme
+        const applyTheme = (theme) => {
+            if (theme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                iconElement.classList.remove('fa-moon');
+                iconElement.classList.add('fa-sun');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+                iconElement.classList.remove('fa-sun');
+                iconElement.classList.add('fa-moon');
+            }
+            localStorage.setItem('theme', theme);
+        };
+        
+        // Initialize theme
+        const currentTheme = getCurrentTheme();
+        applyTheme(currentTheme);
+        
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            applyTheme(currentTheme);
+            
+            // Add animation class
+            iconElement.classList.add('animate-spin');
+            setTimeout(() => {
+                iconElement.classList.remove('animate-spin');
+            }, 500);
+        });
+
         // Simple animation for neumorphic elements on hover
         document.querySelectorAll('.neumorphic-card').forEach(card => {
             card.addEventListener('mouseenter', () => {
