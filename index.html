@@ -108,20 +108,6 @@
             border-radius: 3px;
         }
         
-        .skill-bar {
-            height: 10px;
-            border-radius: 5px;
-            background: var(--bg-color);
-            box-shadow: inset 3px 3px 5px var(--shadow-dark), 
-                        inset -3px -3px 5px var(--shadow-light);
-        }
-        
-        .skill-progress {
-            height: 100%;
-            border-radius: 5px;
-            background: linear-gradient(90deg, var(--skill-gradient-start), var(--skill-gradient-end));
-        }
-        
         .timeline-item {
             position: relative;
             padding-left: 30px;
@@ -151,10 +137,6 @@
             background: var(--timeline-color);
         }
         
-        .timeline-item:last-child:after {
-            display: none;
-        }
-        
         .theme-switch {
             position: fixed;
             top: 20px;
@@ -177,7 +159,6 @@
             color: var(--secondary-text);
         }
 
-        /* Animation for theme switch */
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
@@ -209,17 +190,14 @@
                     </div>
                 </div>
                 <div class="md:w-2/3 md:pl-8 text-center md:text-left">
-                    <h1 class="text-3xl sm:text-4xl font-bold mb-2">Layakishore Reddy Desireddy</h1>
+                    <h1 class="text-3xl sm:text-4xl font-bold mb-2">Layakishore Desireddy</h1>
                     <p class="text-lg mb-4">Master's in Data Science | Software Engineer</p>
                     <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-4">
-                        <div class="neumorphic-flat flex px-4 py-2 rounded-lg">
+                        <div class="neumorphic-flat flex items-center px-4 py-2 rounded-lg">
                             <i class="fas fa-phone-alt mr-2"></i> +1 (732) 532-9087
                         </div>
-                        <div class="neumorphic-flat px-4 py-2 rounded-lg">
-                            <i class="fas fa-envelope mr-2"></i> ld786@scarletmail.rutgers.edu
-                        </div>
-                        <div class="neumorphic-flat px-4 py-2 rounded-lg">
-                            <i class="fas fa-map-marker-alt mr-2"></i> New Brunswick, NJ
+                        <div class="neumorphic-flat flex items-center px-4 py-2 rounded-lg">
+                            <i class="fas fa-envelope mr-2"></i> Ld786@scarletmail.rutgers.edu
                         </div>
                     </div>
                     <div class="flex justify-center md:justify-start space-x-4">
@@ -229,10 +207,10 @@
                         <a href="https://github.com/Layakishorereddy11" target="_blank" rel="noopener noreferrer" class="neumorphic-btn w-10 h-10 rounded-full flex items-center justify-center">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="mailto:ld786@scarletmail.rutgers.edu" target="_blank" rel="noopener noreferrer" class="neumorphic-btn w-10 h-10 rounded-full flex items-center justify-center">
+                        <a href="mailto:Ld786@scarletmail.rutgers.edu" class="neumorphic-btn w-10 h-10 rounded-full flex items-center justify-center">
                             <i class="fas fa-envelope"></i>
                         </a>
-                        <a href="Resume_dlkr.pdf" target="_blank" rel="noopener noreferrer" class="neumorphic-btn w-10 h-10 rounded-full flex items-center justify-center">
+                        <a href="Layakishore_Resume_ML_.pdf" target="_blank" rel="noopener noreferrer" class="neumorphic-btn w-10 h-10 rounded-full flex items-center justify-center">
                             <i class="fas fa-file-pdf"></i>
                         </a>
                     </div>
@@ -251,19 +229,19 @@
                         <div class="neumorphic-card p-4">
                             <h3 class="font-bold text-lg">Rutgers, the State University of New Jersey</h3>
                             <p class="text-gray-600">Master's in Data Science</p>
-                            <p class="text-sm text-gray-500">Aug 2023 - May 2025 | CGPA: 3.7/4</p>
+                            <p class="text-sm text-gray-500">Aug 2023 - May 2025 | New Brunswick, NJ</p>
                             <div class="mt-2">
                                 <span class="text-sm font-medium">Courses:</span>
-                                <p class="text-sm">Natural Language Processing, Database Management System, Machine Learning, Regression and Time Series</p>
+                                <p class="text-sm">Natural Language Processing, Database Management System, Machine Learning, Regression and Time Series, Cloud and ML, Data Mining, Fundamental Algorithms, Devops</p>
                             </div>
                         </div>
                         <div class="neumorphic-card p-4">
-                            <h3 class="font-bold text-lg">Indian Institute of Technology, Tirupati</h3>
+                            <h3 class="font-bold text-lg">IIT Tirupati</h3>
                             <p class="text-gray-600">Bachelor's in Electrical Engineering</p>
-                            <p class="text-sm text-gray-500">Aug 2018 - May 2022 | CGPA: 8/10</p>
+                            <p class="text-sm text-gray-500">Aug 2018 - May 2022 | Tirupati, India</p>
                             <div class="mt-2">
                                 <span class="text-sm font-medium">Courses:</span>
-                                <p class="text-sm">Reinforcement Learning, Advanced Deep Learning, Computer Vision, Robotics and Automation</p>
+                                <p class="text-sm">Reinforcement Learning, Advanced Deep Learning, Computer Vision, Probability and Statistics, Linear Algebra, Advanced Calculus, OOP, Data Structures and Algorithms, Operating Systems</p>
                             </div>
                         </div>
                     </div>
@@ -274,49 +252,51 @@
                     <h2 class="text-2xl font-bold mb-6 section-title">Technical Skills</h2>
                     <div class="space-y-4">
                         <div>
-                            <h3 class="font-medium mb-2">Programming Languages</h3>
+                            <h3 class="font-medium mb-2">Languages</h3>
                             <div class="flex flex-wrap gap-2">
                                 <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">C</span>
                                 <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">C++</span>
                                 <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">C#</span>
                                 <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Java</span>
                                 <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Python</span>
+                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">HTML/CSS</span>
+                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">SQL</span>
+                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Typescript</span>
                                 <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">JavaScript</span>
-                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">R</span>
                             </div>
                         </div>
                         <div>
-                            <h3 class="font-medium mb-2">Data Science Frameworks</h3>
+                            <h3 class="font-medium mb-2">Frameworks/Tools</h3>
                             <div class="flex flex-wrap gap-2">
                                 <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">TensorFlow</span>
                                 <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">PyTorch</span>
-                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Keras</span>
-                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">OpenCV</span>
-                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Numpy</span>
-                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Pandas</span>
-                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Scikit</span>
-                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Seaborn</span>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="font-medium mb-2">Web Frameworks/Tools</h3>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Angular</span>
+                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Angular JS</span>
+                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">React JS</span>
+                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">NodeJs</span>
                                 <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Spring Boot</span>
-                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Dotnet</span>
                                 <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Jenkins</span>
-                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Docker</span>
-                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Kubernetes</span>
-                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">CI/CD pipelines</span>
                             </div>
                         </div>
                         <div>
                             <h3 class="font-medium mb-2">Databases</h3>
                             <div class="flex flex-wrap gap-2">
-                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">MongoDB</span>
+                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">PostgreSQL</span>
                                 <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">MySQL</span>
                                 <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Elasticsearch</span>
-                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Cassandra</span>
+                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">MongoDB</span>
+                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Firestore</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-medium mb-2">Technical Skills</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Distributed ML Training</span>
+                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">AI Infrastructure</span>
+                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">API Design</span>
+                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Unit Testing</span>
+                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">HPC</span>
+                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">CUDA Programming</span>
+                                <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">NCCL</span>
                             </div>
                         </div>
                     </div>
@@ -327,8 +307,23 @@
             <div class="lg:col-span-2 space-y-8">
                 <!-- Professional Experience -->
                 <div class="neumorphic p-6">
-                    <h2 class="text-2xl font-bold mb-6 section-title">Professional Experience</h2>
+                    <h2 class="text-2xl font-bold mb-6 section-title">Work Experience</h2>
                     <div class="space-y-6">
+                         <div class="timeline-item">
+                            <div class="neumorphic-card p-5">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="font-bold text-lg">Machine Learning Engineer Intern, AI/ML</h3>
+                                        <p class="text-gray-600">Jobsforce.ai</p>
+                                    </div>
+                                    <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Mar 2025 - Present</span>
+                                </div>
+                                <ul class="mt-4 space-y-2 list-disc pl-5 text-sm">
+                                    <li>Led a cross-functional team to build and deploy a scalable end-to-end web-based voice-cloning platform with Flask, TTS, React, Docker, MongoDB, using AWS ECR, ECS Fargate, ALB, Auto Scaling, CloudWatch, achieving a 40% reduction in response time and supporting a 3x increase in concurrent user load.</li>
+                                    <li>Implemented an automated form-filling and submission platform using Python, Selenium, and Pandas, integrating GPT-4o and Gemini for personalized responses, containerized in Docker, deployed via AWS ECR and ECS Fargate.</li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="timeline-item">
                             <div class="neumorphic-card p-5">
                                 <div class="flex justify-between items-start">
@@ -338,11 +333,9 @@
                                     </div>
                                     <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">Jul 2022 - Aug 2023</span>
                                 </div>
-                                <ul class="mt-4 space-y-2 list-disc pl-5">
-                                    <li>Architected and implemented end-to-end features within a microfrontend architecture using Angular and Spring Boot, deployed on Google Cloud Platform (GCP).</li>
-                                    <li>Designed and implemented RESTful APIs within a microservices architecture using Spring Boot, leveraging Spring Data JPA and MySQL for efficient data management.</li>
-                                    <li>Integrated CI/CD pipelines to automate builds, tests, and deployments, conducting rigorous testing using Jest, JUnit, and Mockito.</li>
-                                    <li>Designed and built a .NET monitoring tool to identify failed records and automate reprocessing, reducing manual intervention by 75%.</li>
+                                <ul class="mt-4 space-y-2 list-disc pl-5 text-sm">
+                                    <li>Architected and implemented end-to-end features within microfrontend/microservices architectures using Angular and Spring Boot (with Spring Data JPA and MySQL), deployed on Google Cloud Platform (GCP). Enhanced security through JWT authentication and role-based access control while delivering dynamic pages and robust RESTful APIs.</li>
+                                    <li>Developed and launched a .NET (C#) monitoring tool for real-time error detection and root-cause analysis, automating the reprocessing of failed records, reducing manual interventions by 75% and boosting system reliability and uptime.</li>
                                 </ul>
                             </div>
                         </div>
@@ -355,8 +348,8 @@
                                     </div>
                                     <span class="neumorphic-flat px-3 py-1 rounded-full text-sm">May 2021 - Jul 2021</span>
                                 </div>
-                                <ul class="mt-4 space-y-2 list-disc pl-5">
-                                    <li>Engineered unique and sophisticated Deep Neural Network models tailored to training on encrypted data using fully homomorphic encryption (FHE).</li>
+                                <ul class="mt-4 space-y-2 list-disc pl-5 text-sm">
+                                    <li>Engineered unique and sophisticated Deep Neural Network models tailored to training on encrypted data using fully homomorphic encryption, addressing the challenges standard DNN models face with FHE data.</li>
                                     <li>Resolved key challenges to achieve a 99.2% accuracy rate, optimizing performance to within a 0.5% margin of standard deep neural networks trained on unencrypted data.</li>
                                 </ul>
                             </div>
@@ -366,62 +359,106 @@
 
                 <!-- Academic Projects -->
                 <div class="neumorphic p-6">
-                    <h2 class="text-2xl font-bold mb-6 section-title">Academic Projects</h2>
+                    <h2 class="text-2xl font-bold mb-6 section-title">Projects</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="neumorphic-card p-5">
-                            <div class="flex justify-between items-start mb-3">
-                                <h3 class="font-bold text-lg">ChessGPT</h3>
-                                <a href="https://github.com/Layakishorereddy11/Chessgpt" target="_blank" rel="noopener noreferrer" class="neumorphic-btn px-3 py-1 rounded-full text-sm flex items-center">
-                                    <i class="fas fa-external-link-alt mr-1"></i> Link
-                                </a>
-                            </div>
-                            <p class="text-sm text-gray-500 mb-2">Aug 2024 - Dec 2024</p>
-                            <p class="text-sm">Developed ChessGPT, an AI chess agent utilizing NLP techniques and a custom transformer model to predict best chess moves. Multiple models were fine-tuned using various techniques, including Low-Rank Adaptation (LoRA) for efficiency.</p>
+                        <div class="neumorphic-card p-5 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-lg">Natural Language to Query Engine with LLMs</h3>
+                                <p class="text-sm text-gray-500 mb-2">Feb 2025</p>
+                                <p class="text-sm">Built a scalable, production-grade AI system enabling non-technical users to query MySQL and MongoDB using natural language, leveraging GPT-4 and LangChain for conversational interfaces. Implemented prompt templates, robust query validation, and fallback logic, improving translation accuracy and overall system reliability by 30%.</p>
+                             </div>
                             <div class="mt-3 flex flex-wrap gap-2">
-                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">NLP</span>
-                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">Transformer</span>
-                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">Streamlit</span>
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">Python</span>
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">GPT-4</span>
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">LangChain</span>
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">MongoDB</span>
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">MySQL</span>
                             </div>
                         </div>
-                        <div class="neumorphic-card p-5">
-                            <div class="flex justify-between items-start mb-3">
-                                <h3 class="font-bold text-lg">Real-Time Twitter Search App</h3>
-                                <a href="https://github.com/Layakishorereddy11/Twitter_Backend_Search_Cache" target="_blank" rel="noopener noreferrer" class="neumorphic-btn px-3 py-1 rounded-full text-sm flex items-center">
-                                    <i class="fas fa-external-link-alt mr-1"></i> Link
-                                </a>
+                         <div class="neumorphic-card p-5 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-lg">Personalized Healthcare Advisor with Generative AI</h3>
+                                <p class="text-sm text-gray-500 mb-2">Jan 2025</p>
+                                <p class="text-sm">Architected an AI-driven Health Assistance Application for real-time, personalized medical recommendations, leveraging Gemini 1.5 Pro LLM, LangChain, Retrieval Augmented Generation (RAG), and AWS Bedrock. Integrated scalable system components including symptom diagnosis, treatment suggestions, and AI-powered preventive care, delivering business impact by enhancing healthcare decision support.</p>
+                             </div>
+                            <div class="mt-3 flex flex-wrap gap-2">
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">Python</span>
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">RAG</span>
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">LangChain</span>
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">AWS Bedrock</span>
                             </div>
-                            <p class="text-sm text-gray-500 mb-2">Jan 2024 - April 2024</p>
-                            <p class="text-sm">Developed a real-time Twitter search app that streams and indexes tweets and user data. Utilized MySQL for user storage, Elasticsearch for advanced search with engagement-based ranking, and a custom LRU cache to boost query performance by 100×.</p>
+                        </div>
+                        <div class="neumorphic-card p-5 flex flex-col justify-between">
+                            <div>
+                                <h3 class="font-bold text-lg">NLP-Based Chess Engine for Distributed LLM Training</h3>
+                                <p class="text-sm text-gray-500 mb-2">Dec 2024</p>
+                                <p class="text-sm">Developed a transformer-based Chess Engine inspired by GPT-3 architecture, trained on over 3 million chess games using distributed machine learning techniques and High-Performance Computing (HPC) resources. Fine-tuned GPT-3 (124M) with LoRA and Reinforced Fine-Tuning, achieving a 10% win and 69% draw rate against Stockfish, with distributed training reducing training time by 30%, deployed using scalable AWS infrastructure.</p>
+                            </div>
+                            <div class="mt-3 flex flex-wrap gap-2">
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">PyTorch</span>
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">Streamlit</span>
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">Distributed ML</span>
+                            </div>
+                        </div>
+                        <div class="neumorphic-card p-5 flex flex-col justify-between">
+                             <div>
+                                <h3 class="font-bold text-lg">Conversational AI Chatbot</h3>
+                                <p class="text-sm text-gray-500 mb-2">Aug 2024</p>
+                                <p class="text-sm">Designed and deployed a scalable AI chatbot for enterprise customer support, leveraging GPT-4o, LangChain RAG orchestration, and a vector database of indexed support documents for knowledge-grounded responses. Implemented intent classification, dynamic response generation, and retrieval-augmented prompts, cutting query resolution times by 40%, enhancing system reliability and user satisfaction.</p>
+                             </div>
+                            <div class="mt-3 flex flex-wrap gap-2">
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">Python</span>
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">RAG</span>
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">LangChain</span>
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">GPT-4o</span>
+                                <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">AI Infrastructure</span>
+                            </div>
+                        </div>
+                        <div class="neumorphic-card p-5 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between items-start mb-3">
+                                    <h3 class="font-bold text-lg">Real-Time Twitter Search App</h3>
+                                    <a href="https://github.com/Layakishorereddy11/Twitter_Backend_Search_Cache" target="_blank" rel="noopener noreferrer" class="neumorphic-btn px-3 py-1 rounded-full text-sm flex items-center">
+                                        <i class="fas fa-external-link-alt mr-1"></i> Link
+                                    </a>
+                                </div>
+                                <p class="text-sm text-gray-500 mb-2">Jan 2024 - April 2024</p>
+                                <p class="text-sm">Developed a real-time Twitter search app that streams and indexes tweets and user data. Utilized MySQL for user storage, Elasticsearch for advanced search with engagement-based ranking, and a custom LRU cache to boost query performance by 100×.</p>
+                            </div>
                             <div class="mt-3 flex flex-wrap gap-2">
                                 <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">MySQL</span>
                                 <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">Elasticsearch</span>
                                 <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">LRU Cache</span>
                             </div>
                         </div>
-                        <div class="neumorphic-card p-5">
-                            <div class="flex justify-between items-start mb-3">
-                                <h3 class="font-bold text-lg">NYC Vehicle Collisions Analysis</h3>
-                                <a href="https://layakishorereddy11.github.io/CollisionsInNYC/13_interactive.html#hotspots" target="_blank" rel="noopener noreferrer" class="neumorphic-btn px-3 py-1 rounded-full text-sm flex items-center">
-                                    <i class="fas fa-external-link-alt mr-1"></i> Link
-                                </a>
+                        <div class="neumorphic-card p-5 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between items-start mb-3">
+                                    <h3 class="font-bold text-lg">NYC Vehicle Collisions Analysis</h3>
+                                    <a href="https://layakishorereddy11.github.io/CollisionsInNYC/13_interactive.html#hotspots" target="_blank" rel="noopener noreferrer" class="neumorphic-btn px-3 py-1 rounded-full text-sm flex items-center">
+                                        <i class="fas fa-external-link-alt mr-1"></i> Link
+                                    </a>
+                                </div>
+                                <p class="text-sm text-gray-500 mb-2">Feb 2024 - Mar 2024</p>
+                                <p class="text-sm">Built an interactive dashboard analyzing NYPD collision data to identify high-risk areas and trends. Used DBSCAN clustering, Plotly, and Folium to visualize patterns, focusing on pedestrian and cyclist incidents for urban safety.</p>
                             </div>
-                            <p class="text-sm text-gray-500 mb-2">Feb 2024 - Mar 2024</p>
-                            <p class="text-sm">Built an interactive dashboard analyzing NYPD collision data to identify high-risk areas and trends. Used DBSCAN clustering, Plotly, and Folium to visualize patterns, focusing on pedestrian and cyclist incidents for urban safety.</p>
                             <div class="mt-3 flex flex-wrap gap-2">
                                 <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">Data Analysis</span>
                                 <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">DBSCAN</span>
                                 <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">Visualization</span>
                             </div>
                         </div>
-                        <div class="neumorphic-card p-5">
-                            <div class="flex justify-between items-start mb-3">
-                                <h3 class="font-bold text-lg">Efficient Resource Allocation for Object Detection</h3>
-                                <a href="https://drive.google.com/file/d/1uJ5cS8soVCysEXsi0_k5cx30b0wZsFrY/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="neumorphic-btn px-3 py-1 rounded-full text-sm flex items-center">
-                                    <i class="fas fa-external-link-alt mr-1"></i> Link
-                                </a>
+                        <div class="neumorphic-card p-5 flex flex-col justify-between">
+                            <div>
+                                <div class="flex justify-between items-start mb-3">
+                                    <h3 class="font-bold text-lg">Efficient Resource Allocation for Object Detection</h3>
+                                    <a href="https://drive.google.com/file/d/1uJ5cS8soVCysEXsi0_k5cx30b0wZsFrY/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="neumorphic-btn px-3 py-1 rounded-full text-sm flex items-center">
+                                        <i class="fas fa-external-link-alt mr-1"></i> Link
+                                    </a>
+                                </div>
+                                <p class="text-sm text-gray-500 mb-2">Aug 2021 - May 2022</p>
+                                <p class="text-sm">Developed a scalable object detection system on Raspberry Pis to efficiently utilize their full computational capacity for deep learning algorithms. Orchestrated horizontal scaling across 6 devices, implementing a custom load balancing algorithm.</p>
                             </div>
-                            <p class="text-sm text-gray-500 mb-2">Aug 2021 - May 2022</p>
-                            <p class="text-sm">Developed a scalable object detection system on Raspberry Pis to efficiently utilize their full computational capacity for deep learning algorithms. Orchestrated horizontal scaling across 6 devices, implementing a custom load balancing algorithm.</p>
                             <div class="mt-3 flex flex-wrap gap-2">
                                 <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">Edge Computing</span>
                                 <span class="neumorphic-flat px-2 py-1 rounded-full text-xs">Load Balancing</span>
@@ -443,10 +480,10 @@
                 <a href="https://github.com/Layakishorereddy11" target="_blank" rel="noopener noreferrer" class="neumorphic-btn w-10 h-10 rounded-full flex items-center justify-center">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="mailto:ld786@scarletmail.rutgers.edu" target="_blank" rel="noopener noreferrer" class="neumorphic-btn w-10 h-10 rounded-full flex items-center justify-center">
+                <a href="mailto:Ld786@scarletmail.rutgers.edu" class="neumorphic-btn w-10 h-10 rounded-full flex items-center justify-center">
                     <i class="fas fa-envelope"></i>
                 </a>
-                <a href="Resume_dlkr.pdf" target="_blank" rel="noopener noreferrer" class="neumorphic-btn w-10 h-10 rounded-full flex items-center justify-center">
+                <a href="Layakishore_Resume_ML_.pdf" target="_blank" rel="noopener noreferrer" class="neumorphic-btn w-10 h-10 rounded-full flex items-center justify-center">
                     <i class="fas fa-file-pdf"></i>
                 </a>
             </div>
@@ -454,68 +491,34 @@
     </div>
 
     <script>
-        // Theme switching functionality
         const themeToggle = document.getElementById('themeToggle');
         const iconElement = themeToggle.querySelector('i');
         
-        // Check for saved theme preference or use device preference
         const getCurrentTheme = () => {
             const savedTheme = localStorage.getItem('theme');
-            if (savedTheme) {
-                return savedTheme;
-            }
+            if (savedTheme) return savedTheme;
             return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         };
         
-        // Apply the current theme
         const applyTheme = (theme) => {
             if (theme === 'dark') {
                 document.documentElement.setAttribute('data-theme', 'dark');
-                iconElement.classList.remove('fa-moon');
-                iconElement.classList.add('fa-sun');
-            } else {
-                document.documentElement.removeAttribute('data-theme');
                 iconElement.classList.remove('fa-sun');
                 iconElement.classList.add('fa-moon');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+                iconElement.classList.remove('fa-moon');
+                iconElement.classList.add('fa-sun');
             }
             localStorage.setItem('theme', theme);
         };
         
-        // Initialize theme
         const currentTheme = getCurrentTheme();
         applyTheme(currentTheme);
         
-        // Toggle theme on button click
         themeToggle.addEventListener('click', () => {
-            const currentTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-            applyTheme(currentTheme);
-            
-            // Add animation class
-            iconElement.classList.add('animate-spin');
-            setTimeout(() => {
-                iconElement.classList.remove('animate-spin');
-            }, 500);
-        });
-
-        // Simple animation for neumorphic elements on hover
-        document.querySelectorAll('.neumorphic-card').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transition = 'all 0.3s ease';
-            });
-            
-            card.addEventListener('mouseleave', () => {
-                card.style.transition = 'all 0.3s ease';
-            });
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+            const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            applyTheme(newTheme);
         });
     </script>
 </body>
